@@ -1,0 +1,44 @@
+Files Used
+
+. Degree.rb
+. Data.rb
+
+I)Degree.rb
+
+It is for creating tree structure by using the datas what we have given.
+For example
+
+1.connection method
+	To create tree structure with datas
+	connection_find =Fetchdata.new()
+	connection_find.connection('Amitabh Bachchan', 'Leonardo DiCaprio')
+	connection_find.connection('Leonardo DiCaprio', 'Martin Scorsese')
+	connection_find.connection('Martin Scorsese', 'Robert De Niro')  
+
+2.connected method
+	Return the degree of seperation between two values
+	connection_find.connected?('Amitabh Bachchan', 'Robert De Niro')
+
+
+
+
+II)Data.rb
+
+To find the degree of seperation, consider you are giving value as actor1,actor2
+First check whether actor1 and actor2 are directly connected ie they have any common movies or not 
+If they are not connecting directly then go for looping
+		1. List the movies of actor1
+		2. Get the actors list from the movies of actor1
+		3  Form tree (connection method)between actor1 and all actors in list 
+		4. Exit loop if you find the actor2 in the list
+		5. If not then again get the movies of actors in the actor list
+		6. Then repeat the process from step 1
+		7. Once tree is created, verify degree of seperation value with "connected" method
+	
+
+Note
+Degree of Seperation currently getting from "connected" method is not minimum one.
+Looping in data.rb is upto 3 level only. It is not an infinite loop.
+		
+		
+		
