@@ -35,10 +35,14 @@ If they are not connecting directly then go for looping
 		6. Then repeat the process from step 1
 		7. Once tree is created, verify degree of seperation value with "connected" method
 	
+How to Run
+	1. Execute the data.rb file
+	2. Currently i have given two actors ('Amitabh Bachchan','Sharmila Shetty)
+	3. You can change the actors in manipulate_datas(creating tree structure) and connected(return degree of sepeartion) method.
+
 
 Note
 Degree of Seperation currently getting from "connected" method is not minimum one.
 Looping in data.rb is upto 3 level only. It is not an infinite loop.
-		
 		
 		
